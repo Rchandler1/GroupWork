@@ -7,6 +7,11 @@ fetch(
     return response.json();
   })
   .then(function(data) {
-      console.log(data)
+
+      console.log(data);
     console.log(data.calories);
+    var kCal = data.calories;
+    console.log(kCal)
   });
+
+
