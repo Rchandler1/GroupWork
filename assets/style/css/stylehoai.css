@@ -1,0 +1,43 @@
+
+.header {
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
+.column {
+    float:right 30%;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%
+    }
+}    
