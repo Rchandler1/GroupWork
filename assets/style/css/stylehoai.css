@@ -1,0 +1,96 @@
+
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 50px;
+}
+
+.navbarbrand {
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 50px;
+}
+
+.topnav {
+    text-align: right;
+    overflow: hidden;
+    background-color: gray;
+    padding: 50px;
+}
+
+.wrapper {
+    margin-top: 20px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.thead {
+    display: table-header-group;
+}
+.tl {
+    display: table-row;
+}
+.foodcontainer {
+    margin-top: 30px;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    text-indent: 15px;
+    background-color: transparent;
+    border-collapse: collapse;
+    padding: 15px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnavtoggle {
+    background-color: red;
+    color: black;
+}
+
+.column {
+    float:right;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row {
+    margin-right: 15px;
+    margin-left: -15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%
+    }
+}    
