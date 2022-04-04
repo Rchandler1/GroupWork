@@ -12,6 +12,7 @@ function getCals() {
   document.getElementById("f1").innerHTML = food1;
   document.getElementById("f2").innerHTML = food2;
   document.getElementById("f3").innerHTML = food3;
+  localStorage.setItem("foods", JSON.stringify(foods));
   for (let i = 0; i < 4; i++) {
     var foodQuery =
       "https://api.edamam.com/api/nutrition-data?app_id=709d15ec&app_key=7d054cc543454bc65ec5a46c084b49fd&nutrition-type=logging&ingr=" +
@@ -34,7 +35,9 @@ function getCals() {
       initialValue
     );
     console.log(sumWithInitial)
-    document.getElementById("total").innerHTML = sumWithInitial
+    document.getElementById("total").innerHTML = sumWithInitial;
+    localStorage.setItem("totals", JSON.stringify(sumWithInitial));
+    localStorage.setItem("cals", JSON.stringify(foodCals));
       })
 
       
