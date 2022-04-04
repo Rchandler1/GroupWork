@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OUR WEBSITE TITLE FOOOOOOD</title>
+    <title>Calorie Counter</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style/css/style.css" />
     <link rel="stylesheet" href="./assets/style/css/normalize.css" />
@@ -24,36 +24,45 @@
         <div class="wrapper container">
             <div class="row">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum id nulla eget auctor. Morbi nisl urna, vulputate et enim nec, interdum placerat lectus. Morbi ac mollis est. Donec tellus leo, lobortis ac enim in, bibendum lacinia arcu. Donec convallis, dui eu pellentesque tempus, ex massa malesuada magna, vel volutpat eros nunc gravida ipsum. Fusce interdum sem eu felis pulvinar, id lacinia risus pellentesque. Nullam eros velit, rhoncus vitae eros nec, bibendum rhoncus erat. Nam ac felis erat. Phasellus pellentesque magna ullamcorper nulla posuere, faucibus efficitur nisi aliquam. Vestibulum varius eget arcu ut aliquet. Curabitur dictum pharetra bibendum. Vestibulum id mauris diam. Integer vehicula velit eget metus suscipit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas arcu eget tristique gravida.</p>
+                Calorie Counter is here to help you quickly get the calorie total for any 4 foods</p>
+                
                 <div class="column">
-                    <h2>ingredients</h2>
+                    <h2>Foods</h2>
                     <form id="form">
-                        Food 1: <input type="text" name="food1" id="food1"  required><br>
-                        Food 2: <input type="text" name="food2" id="food2"><br>
-                        Food 3: <input type="text" name="food3" id="food3"><br>
-                        Food 4: <input type="text" name="food4" id="food4"><br>
+                        Food 1: <input type="text" name="food1" id="food1" required><br>
+                        Food 2: <input type="text" name="food2" id="food2" required><br>
+                        Food 3: <input type="text" name="food3" id="food3" required><br>
+                        Food 4: <input type="text" name="food4" id="food4" required><br>
                         <input type="button" onclick="getCals()" value="Submit form">
                     </form>
                 </div>
                 <div class="foodcontainer table">
-                    <table class="table table-condensed table-responsive table-striped">
+                    <table id="table1" class="table table-condensed table-responsive table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">Food</th>
-                                <th scope="col">calories</th>
+                                <th scope="col">Calories</th>
                             </tr>
                             <tr>
-                                <th scope="row" id="row1"></th>
+                                <td id="f0"></td>
+                                <td id="cals0"></td>
                             </tr>
                             <tr>
-                                <th scope="row" id="row2"></th>
+                                <td id="f1"></td>
+                                <td id="cals1"></td>
                             </tr>
                             <tr>
-                                <th scope="row" id="row3"></th>
+                                <td id="f2"></td>
+                                <td id="cals2"></td>
                             </tr>
                             <tr>
-                                <th scope="row" id="row4"></th>
+                                <td id="f3"></td>
+                                <td id="cals3"></td>
                             </tr>
+                            <tfoot>
+                                <th>Total</td>
+                                <th id="total"></td>
+                            </tfoot>
                         </thead>
                     </table>
                 </div>
@@ -65,7 +74,8 @@
     <footer>
         <div class="container">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum id nulla eget auctor. Morbi nisl urna, vulputate et enim nec, interdum placerat lectus. Morbi ac mollis est. Donec tellus leo, lobortis ac enim in, bibendum lacinia arcu. Donec convallis, dui eu pellentesque tempus, ex massa malesuada magna, vel volutpat eros nunc gravida ipsum. Fusce interdum sem eu felis pulvinar, id lacinia risus pellentesque. Nullam eros velit, rhoncus vitae eros nec, bibendum rhoncus erat. Nam ac felis erat. Phasellus pellentesque magna ullamcorper nulla posuere, faucibus efficitur nisi aliquam. Vestibulum varius eget arcu ut aliquet. Curabitur dictum pharetra bibendum. Vestibulum id mauris diam. Integer vehicula velit eget metus suscipit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas arcu eget tristique gravida.</p>
+                Calorie Counter </p>
+                <a href="https://www.edamam.com/">API powered by EDAMAM</a>
         </div>
     </footer>
 
