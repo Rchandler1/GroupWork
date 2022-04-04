@@ -30,7 +30,12 @@
     margin-right: auto;
     margin-left: auto;
 }
-
+.thead {
+    display: table-header-group;
+}
+.tl {
+    display: table-row;
+}
 .foodcontainer {
     margin-top: 30px;
 }
